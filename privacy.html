@@ -14,28 +14,30 @@ ol li,ul li{margin:.3em 0}footer{text-align:center;color:#66707d;font-size:.9rem
 <nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="delete-account.html">Delete Your Account</a></nav>
 <main>
 <h1>Shield Credit Privacy Policy</h1>
-<p><strong>Effective date: October 28, 2026</strong></p>
+<p><strong>Effective date: October 29, 2026</strong></p>
 <p><strong>Published by Clinton Brown, an individual based in Maryland, USA.</strong></p>
 <p>Contact: <a href="mailto:clb6577@gmail.com">clb6577@gmail.com</a></p>
 <p>This policy explains what the Shield Credit mobile app ("Shield Credit", "we") collects, how it is used, and the choices you have. It matches the in-app Privacy Policy screen.</p>
 <h2>1. Information we collect</h2>
 <ul>
-<li><strong>Account information:</strong> your email address and password (handled by our authentication provider; we never see your password in plain text), and an optional name you enter at sign-up.</li>
+<li><strong>Account information:</strong> your email address and password (handled by our authentication provider; we never see your password in plain text), and an optional name you enter at sign-up. We also store your account ID.</li>
+<li><strong>Age confirmation:</strong> your confirmation that you are 18 or older and the date and time you gave it, stored with your account.</li>
 <li><strong>Documents you choose to scan:</strong> photos, images, or PDFs you upload, and text you paste. Uploaded files are stored privately under your account. Pasted text is processed but not stored as a file.</li>
+<li><strong>Photo location data:</strong> starting with version 1.0.0 (build 7), the app removes location (GPS) data and other camera details from photos before they are uploaded, keeping only the image orientation. Earlier builds did not remove it, so photos uploaded with an earlier build may still contain it.</li>
 <li><strong>Content the app creates for you:</strong> scan summaries, possible issues, cases, notes, status history, letters and letter versions, and delivery records you enter (for example, that you mailed a letter on a date).</li>
+<li><strong>Details you enter for letters:</strong> your name, mailing address, phone number, and email, the recipient's name and address, and account numbers. They are saved with the letter.</li>
 <li><strong>Short document excerpts:</strong> when you save a possible issue to a case, a short excerpt of the document text it refers to (up to 200 characters) is saved with it.</li>
-<li><strong>Settings and usage counts:</strong> in-app preferences and simple counts such as how many scans you ran (used for limits).</li>
 <li><strong>Server logs:</strong> our server's own logs record event names (such as "scan completed"), your account ID, timestamps, and counts. They do not contain document contents or IP addresses.</li>
 </ul>
-<p>We do not collect your location, contacts, microphone audio, advertising ID, or device identifiers. The app contains no advertising or analytics SDKs.</p>
+<p>The app does not request or use your device's location, and we do not collect your contacts, microphone audio, advertising ID, or device identifiers. The app contains no advertising or analytics SDKs.</p>
 <h2>2. How we use information</h2>
-<p>To provide the app: sign you in, store and show your documents and cases, analyze documents you submit, help you prepare letters, enforce usage limits, keep the service secure, and respond to support requests. We do not use your information for advertising and we do not sell it.</p>
+<p>To provide the app: sign you in, store and show your documents and cases, analyze documents you submit, help you prepare letters, keep the service secure (including limiting how many requests can be made), and respond to support requests. We do not use your information for advertising and we do not sell it.</p>
 <h2>3. How documents are processed</h2>
 <ul>
 <li><strong>PDFs</strong> are read on our own server.</li>
 <li><strong>Photos/images:</strong> when live analysis is enabled, our server sends the image to <strong>Google Cloud Vision</strong> to read the text.</li>
 <li><strong>Analysis:</strong> when live analysis is enabled, our server sends the extracted text (limited in length) or your pasted text to <strong>OpenAI</strong> to produce the summary and list of possible issues.</li>
-<li><strong>Letter help:</strong> only the short facts you confirm are sent to OpenAI, not the whole document.</li>
+<li><strong>Letter help:</strong> when live analysis is enabled, only the short facts you confirm are sent to OpenAI, not the whole document. These facts can include the contact details and account numbers you entered for the letter.</li>
 <li>We do not keep the full extracted text of a document after a scan; we keep the summary, the possible issues, and their short excerpts.</li>
 <li><strong>Current status:</strong> live analysis is currently turned off. Scans use built-in sample analysis, the results are sample output and not an analysis of your document, and no document data is sent to Google Cloud Vision or OpenAI.</li>
 </ul>
